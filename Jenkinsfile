@@ -23,7 +23,7 @@ pipeline {
             steps {
                 withDockerRegistry([credentialsId: '961f6ec3-fa2a-4821-a99d-cde5c51adcc2', url: 'https://index.docker.io/v1/']) {
                     sh 'docker images'
-                    sh 'docker run -d --rm -it -p 5000:5000 mvmadhan/python-webapp:latest'
+                    sh 'docker run -d --rm -it -p 6000:6000 mvmadhan/python-webapp:latest'
                 }
             }
         }
